@@ -1,0 +1,16 @@
+#### How to deploy backend code in production ? ###
+
+Production Deployment Process:
+
+Application Development:
+Create a basic Node.js application using a framework like Express.js.
+Define API endpoints and implement necessary logic.
+
+Deployment Strategy:
+Choose a suitable deployment strategy, such as Heroku, AWS, or a custom server.
+Configure the chosen platform to host the application.
+
+Deployment Steps:
+Package the application for deployment.
+Deploy the package to the chosen platform.
+Configure the platform's settings (e.g., domain name, environment variables).

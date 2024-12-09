@@ -1,0 +1,39 @@
+### How to connect frontend and backend in javascript | Fullstack Proxy and CORS ###
+
+1) Understanding the Basics
+
+Frontend: The user-facing part of the application, built with HTML, CSS, and JavaScript frameworks like React, Angular, or Vue.js.
+Backend: The server-side logic handling data processing and storage, often developed in Node.js, Python, or Ruby.
+
+2) Key Concepts
+
+API (Application Programming Interface): A set of rules defining how software components interact.
+REST (Representational State Transfer): An architectural style for web APIs using HTTP methods (GET, POST, PUT, DELETE) and resources.
+CORS (Cross-Origin Resource Sharing): Allows web pages to request resources from different domains.
+
+3) Steps to Connect Frontend and Backend
+
+i)Backend Setup
+
+Create a Server: Use a framework like Express.js (Node.js) to build a server.
+Define API Endpoints: Define routes for different actions (e.g., fetching data, creating, updating, deleting).
+Implement Data Handling: Use a database (MongoDB, PostgreSQL) to store and retrieve data.
+Handle Requests and Responses: Process incoming requests, interact with the database, and send responses back to the frontend.
+
+ii)Frontend Integration
+
+Make HTTP Requests: Use the Fetch API or libraries like Axios to send requests to the backend API endpoints.
+Handle Responses: Process received data and update the frontend UI.
+Error Handling: Implement error handling to deal with network errors or server errors.
+
+##### Proxy ####
+Using Proxies for Cross-Origin Resource Sharing (CORS)
+Proxies can help bypass CORS restrictions by redirecting requests from the client domain to the server's domain.
+Example: Adding a proxy in development to avoid CORS issues in frontend-backend communication.
+
+// In a frontend development setup (React example) CRA
+// package.json
+
+"proxy": "http://localhost:5000",
+With this configuration, requests made to http://localhost:3000 (React) are forwarded to http://localhost:5000 (API), bypassing CORS restrictions.
+
